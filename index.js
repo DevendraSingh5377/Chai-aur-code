@@ -16,6 +16,10 @@ app.get('/login',(req, res)=>{
     res.send('<h1>please login to the app')
 })
 
+app.get('/github',(req,res) => {
+  res.json(githubData);
+})
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
